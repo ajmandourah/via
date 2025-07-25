@@ -30,17 +30,17 @@ const defaultStoreData = {
   settings: {
     showDesignTab: false,
     disableFastRemap: false,
-    renderMode: '2D' as const,
+    renderMode: '3D' as const,
     themeMode: 'dark' as const,
     designDefinitionVersion: 'v3' as const,
-    themeName: 'OLIVIA_DARK',
+    themeName: 'THOCK75',
     macroEditor: {
       smartOptimizeEnabled: true,
       recordDelaysEnabled: false,
       tapEnterAtEOMEnabled: false,
     },
     testKeyboardSoundsSettings: {
-      isEnabled: true,
+      isEnabled: false,
       volume: 100,
       waveform: 'sine' as const,
       mode: TestKeyboardSoundsMode.WickiHayden,

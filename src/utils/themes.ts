@@ -9,6 +9,20 @@ export type Theme = {
 
 export const THEMES = {
   ...{
+    THOCK75: {
+      alpha: {
+        c: '#0d0b0b',
+        t: '#b04c1a',
+      },
+      mod: {
+        c: '#0d0b0b',
+        t: '#b04c1a',
+      },
+      accent: {
+        t: '#7a7a7a',
+        c: '#0d0b0b',
+      },
+    },
     OLIVIA_DARK: {
       alpha: {
         c: '#363434',
