@@ -40,7 +40,7 @@ const defaultStoreData = {
       tapEnterAtEOMEnabled: false,
     },
     testKeyboardSoundsSettings: {
-      isEnabled: false,
+      isEnabled: true,
       volume: 100,
       waveform: 'sine' as const,
       mode: TestKeyboardSoundsMode.WickiHayden,

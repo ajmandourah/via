@@ -1,6 +1,6 @@
 import {PresentationControls, useGLTF} from '@react-three/drei';
 import React, {useRef} from 'react';
-import cubeySrc from 'assets/models/cubey.glb';
+import cubeySrc from 'assets/models/keycap.glb';
 import {useFrame} from '@react-three/fiber';
 import {shallowEqual} from 'react-redux';
 import {Color, Mesh, MeshBasicMaterial, MeshStandardMaterial} from 'three';
@@ -34,16 +34,18 @@ export const LoaderCubey: React.FC<{theme: Theme; visible: boolean}> =
       if (visible) {
         spinnerRef.current.rotation.z =
           Math.sin(clock.elapsedTime) * (Math.PI / 40);
+        // spinnerRef.current.rotation.y =
+        //   Math.PI + Math.sin(0.6 * clock.elapsedTime) * (Math.PI / 16);
         spinnerRef.current.rotation.y =
-          Math.PI + Math.sin(0.6 * clock.elapsedTime) * (Math.PI / 16);
+          Math.PI + Math.sin(0.4 * clock.elapsedTime) * (Math.PI / 4);
         spinnerRef.current.position.y =
-          yInit + 0.2 * Math.sin(clock.elapsedTime);
+          yInit + 0.01 * Math.sin(clock.elapsedTime);
       }
     });
 
     return (
       <>
-        <group scale={0.6} position={[0, yInit, -19]}>
+        <group scale={0.6} position={[0, yInit, 0]}>
           <PresentationControls
             enabled={true} // the controls can be disabled by setting this to false
             global={true} // Spin globally or by dragging the model

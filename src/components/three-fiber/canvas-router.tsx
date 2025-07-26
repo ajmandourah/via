@@ -227,7 +227,7 @@ const Lights = React.memo(() => {
       <SpotLight
         ref={ref}
         distance={spotlightY + 3}
-        position={[0, spotlightY, spotlightZ + 2]}
+        position={[0, spotlightY + 3, spotlightZ + 10]}
         angle={Math.PI / 5}
         attenuation={5}
         target={targetObj}
@@ -237,6 +237,7 @@ const Lights = React.memo(() => {
       ></SpotLight>
       <pointLight position={[x, y, z]} intensity={20} />
       <pointLight position={[-x, y, z]} intensity={20} />
+      <pointLight color={"#e3d8aa"} position={[1, -3, 4]} intensity={20} />
     </>
   );
 }, shallowEqual);
