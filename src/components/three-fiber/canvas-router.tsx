@@ -10,7 +10,7 @@ import {
 } from '@react-three/drei';
 import {Canvas} from '@react-three/fiber';
 import {DefinitionVersionMap, KeyColorType} from '@the-via/reader';
-import cubeySrc from 'assets/models/cubey.glb';
+import cubeySrc from 'assets/models/keycap.glb';
 import glbSrc from 'assets/models/keyboard_components.glb';
 import React, {Suspense, useCallback, useEffect, useMemo, useRef} from 'react';
 import {shallowEqual} from 'react-redux';
