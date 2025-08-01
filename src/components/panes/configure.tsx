@@ -169,7 +169,7 @@ const Loader: React.FC<{
       {<ChippyLoader theme={theme} progress={loadProgress || null} />}
       {(showButton || noConnectedDevices) && !noSupportedIds && !isElectron ? (
         <AccentButtonLarge onClick={() => dispatch(reloadConnectedDevices())}>
-          Authorize device
+          test
           <FontAwesomeIcon style={{marginLeft: '10px'}} icon={faPlus} />
         </AccentButtonLarge>
       ) : (
@@ -248,7 +248,7 @@ const ConfigureGrid = () => {
           <Badge />
         </div>
       </ConfigureFlexCell>
-      <Grid style={{pointerEvents: 'none'}}>
+      <Grid dir="rtl" style={{pointerEvents: 'none'}}>
         <MenuCell style={{pointerEvents: 'all'}}>
           <MenuContainer>
             {(KeyboardRows || []).map(

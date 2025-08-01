@@ -85,9 +85,9 @@ export const MacroEditControls: React.FC<{
       <IconButtonTooltip>
         {isFullscreen
           ? isRecording
-            ? 'Stop Recording'
-            : 'Record Keystrokes'
-          : 'Can only record when fullscreen'}
+            ? 'ايقاف التسجيل'
+            : 'تسجيل كبسات المفاتيح'
+          : 'التسجيل متاح فقط عند تكبير الشاشة'}
       </IconButtonTooltip>
     </IconButtonContainer>
   );
@@ -155,7 +155,7 @@ export const MacroEditControls: React.FC<{
               icon={isFullscreen ? faCompress : faExpand}
             />
             <IconButtonTooltip>
-              {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
+              {isFullscreen ? 'تصغير الشاشة' : 'Fullscreen'}
             </IconButtonTooltip>
           </IconButtonContainer>
         }
@@ -189,8 +189,8 @@ export const MacroEditControls: React.FC<{
                 {!isDelaySupported
                   ? 'Upgrade firmware to use delays'
                   : !recordDelays
-                  ? 'Record Delays'
-                  : 'Skip Recording Delays'}
+                  ? 'تسجيل تأخر'
+                  : 'تجاهل تسجيل تأخر'}
               </IconButtonTooltip>
             </IconToggleContainer>
           </MacroControlGroupContainer>

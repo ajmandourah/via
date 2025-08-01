@@ -142,7 +142,7 @@ export const ScriptMode: React.FC<{
           minChar={0}
           textAreaComponent={TextArea as any}
           movePopupAsYouType={true}
-          placeholder={`Enter the macro you want M${macroIndex} to execute...`}
+          placeholder={`ادخل الماكرو المراد M${macroIndex} تشغيله`}
           trigger={{
             '?': {
               dataProvider: findKeycodes,
@@ -177,18 +177,18 @@ export const ScriptMode: React.FC<{
         <DescriptionLabel>
           <ToastErrorMessage>{errorMessage}</ToastErrorMessage>
           <Message>
-            Enter text directly, or wrap{' '}
+            ادخل النص او ضعه بين{' '}
             <Link href="https://docs.qmk.fm/#/keycodes_basic" target="_blank">
-              Basic Keycodes
+              اوامر اساسية
             </Link>{' '}
             in {'{}'}
           </Message>
-          <Message>Single tap: {'{KC_XXX}'}</Message>
+          <Message>ضغطة واحدة كاملة: {'{KC_XXX}'}</Message>
           <Message>Chord: {'{KC_XXX, KC_YYY, KC_ZZZ}'}</Message>
-          <Message>Keydown: {`{+KC_XXX}`}</Message>
-          <Message>Keyup: {`{-KC_XXX}`}</Message>
+          <Message>ضغطة لاسفل فقط: {`{+KC_XXX}`}</Message>
+          <Message>رفع الضغطة فقط: {`{-KC_XXX}`}</Message>
           {isDelaySupported ? (
-            <Message>Delay (ms): {'{NNNN}'} </Message>
+            <Message>تأخر (ms): {'{NNNN}'} </Message>
           ) : (
             'Upgrade firmware to use delays'
           )}

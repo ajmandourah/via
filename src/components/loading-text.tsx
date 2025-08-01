@@ -6,7 +6,7 @@ const LoadingText = styled.div`
 `;
 
 enum LoadingLabel {
-  Searching = 'Searching for devices...',
+  Searching = 'جاري البحث عن الاجهزه المتوافقة',
   Loading = 'Loading...',
 }
 

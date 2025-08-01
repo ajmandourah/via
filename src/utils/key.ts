@@ -349,7 +349,7 @@ export function getOtherMenu(
 
   return {
     id: 'other',
-    label: 'Other',
+    label: 'اخرى',
     keycodes,
   };
 }
@@ -390,7 +390,7 @@ function buildLayerMenu(): IKeycodeMenu {
 
   const menu: IKeycodeMenu = {
     id: 'layers',
-    label: 'Layers',
+    label: 'طبقات',
     width: 'label',
     keycodes: [
       {
@@ -483,7 +483,7 @@ export function getKeycodes(numMacros = 16): IKeycodeMenu[] {
   return [
     {
       id: 'basic',
-      label: 'Basic',
+      label: 'أساسي',
       keycodes: [
         {name: '', code: 'KC_NO', title: 'Nothing'},
         {name: '▽', code: 'KC_TRNS', title: 'Pass-through'},
@@ -729,7 +729,7 @@ export function getKeycodes(numMacros = 16): IKeycodeMenu[] {
     },
     {
       id: 'media',
-      label: 'Media',
+      label: 'ميديا',
       width: 'label',
       keycodes: [
         {name: 'Vol -', code: 'KC_VOLD', title: 'Volume Down'},
@@ -747,14 +747,14 @@ export function getKeycodes(numMacros = 16): IKeycodeMenu[] {
     },
     {
       id: 'macro',
-      label: 'Macro',
+      label: 'ماكرو',
       width: 'label',
       keycodes: generateMacros(numMacros)
     },
     buildLayerMenu(),
     {
       id: 'special',
-      label: 'Special',
+      label: 'خاص',
       width: 'label',
       keycodes: [
         {name: '~', code: 'S(KC_GRV)', keys: '`', title: 'Shift + `'},
@@ -930,7 +930,7 @@ export function getKeycodes(numMacros = 16): IKeycodeMenu[] {
     /* These are for controlling the original backlighting and bottom RGB. */
     {
       id: 'qmk_lighting',
-      label: 'Lighting',
+      label: 'اضاءة',
       width: 'label',
       keycodes: [
         {name: 'BL Toggle', code: 'BL_TOGG'},
@@ -967,7 +967,7 @@ export function getKeycodes(numMacros = 16): IKeycodeMenu[] {
     */
     {
       id: 'custom',
-      label: 'Custom',
+      label: 'مخصص',
       width: 'label',
       keycodes: [
         {name: 'CUSTOM(0)', code: 'CUSTOM(0)', title: 'Custom Keycode 0'},

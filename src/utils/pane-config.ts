@@ -17,7 +17,7 @@ export default [
     key: 'default',
     component: ConfigurePane,
     icon: faKeyboard,
-    title: 'Configure',
+    title: 'تخصيص الكيبورد',
     path: '/',
   },
   {
@@ -25,7 +25,7 @@ export default [
     component: Test,
     icon: faStethoscope,
     path: '/test',
-    title: 'Key Tester',
+    title: 'تجربة المفاتيح',
   },
   {
     key: 'design',
@@ -39,7 +39,7 @@ export default [
     component: Settings,
     icon: faGear,
     path: '/settings',
-    title: 'Settings',
+    title: 'الاعدادات',
   },
   {
     key: 'debug',

@@ -9,5 +9,5 @@ const SvgIcTune24Px: React.FC<{}> = (props) => (
   </svg>
 );
 
-export const title = 'Settings';
+export const title = 'Settings الاعدادات';
 export const component = SvgIcTune24Px;

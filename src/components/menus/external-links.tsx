@@ -17,7 +17,7 @@ export const ExternalLinks = () => (
     <a href="https://thockkeyboard.com/" target="_blank">
       <CategoryIconContainer>
         <img height="25px" src="/images/logo.png"/>
-        <CategoryMenuTooltip>Best Keyboard</CategoryMenuTooltip>
+        <CategoryMenuTooltip>افضل كيبورد في العالم</CategoryMenuTooltip>
       </CategoryIconContainer>
     </a>
     <CategoryIconContainer></CategoryIconContainer>

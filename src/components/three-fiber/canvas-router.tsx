@@ -169,7 +169,7 @@ export const NonSuspenseCanvasRouter = () => {
                   onClick={() => dispatch(reloadConnectedDevices())}
                   style={{width: 'max-content'}}
                 >
-                  Authorize device
+                  التعرف على الكيبورد
                   <FontAwesomeIcon
                     style={{marginLeft: '10px'}}
                     icon={faUnlock}

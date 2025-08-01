@@ -88,14 +88,14 @@ export const Settings = () => {
     (opt) => opt.value === renderMode,
   );
   return (
-    <Pane>
+    <Pane dir="rtl">
       <Grid style={{overflow: 'hidden'}}>
         <MenuCell style={{pointerEvents: 'all', borderTop: 'none'}}>
           <MenuContainer>
             <Row $selected={true}>
               <IconContainer>
                 <FontAwesomeIcon icon={faToolbox} />
-                <MenuTooltip>General</MenuTooltip>
+                <MenuTooltip>عام</MenuTooltip>
               </IconContainer>
             </Row>
           </MenuContainer>
@@ -103,7 +103,7 @@ export const Settings = () => {
         <SpanOverflowCell style={{flex: 1, borderWidth: 0}}>
           <Container>
             <ControlRow>
-              <Label>Show Design tab</Label>
+              <Label>اظهار خيار ديزاين</Label>
               <Detail>
                 <AccentSlider
                   onChange={() => dispatch(toggleCreatorMode())}
@@ -112,7 +112,7 @@ export const Settings = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Fast Key Mapping</Label>
+              <Label>نمط Fast Key Mapping</Label>
               <Detail>
                 <AccentSlider
                   onChange={() => dispatch(toggleFastRemap())}
@@ -121,7 +121,7 @@ export const Settings = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Light Mode</Label>
+              <Label>تعطيل النمط الداكن</Label>
               <Detail>
                 <AccentSlider
                   onChange={() => dispatch(toggleThemeMode())}
@@ -130,7 +130,7 @@ export const Settings = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Keycap Theme</Label>
+              <Label>تغيير ثيم الواجهة</Label>
               <Detail>
                 <AccentSelect
                   defaultValue={themeDefaultValue}
@@ -142,7 +142,7 @@ export const Settings = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Render Mode</Label>
+              <Label>نوع الواجهة</Label>
               <Detail>
                 <AccentSelect
                   defaultValue={renderModeDefaultValue}
@@ -154,7 +154,7 @@ export const Settings = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Show Diagnostic Information</Label>
+              <Label>اظهار معلومات تشخيصية عن الكيبورد</Label>
 
               <Detail>
                 {selectedDevice ? (
@@ -164,7 +164,7 @@ export const Settings = () => {
                   />
                 ) : (
                   <SettingsErrorMessage>
-                    Requires connected device
+                    يجب ان يكون الكيبورد متصلا بالجهاز
                   </SettingsErrorMessage>
                 )}
               </Detail>

@@ -123,7 +123,7 @@ export const Test: FC = () => {
   );
 
   return progress !== 100 ? null : (
-    <TestPane>
+    <TestPane dir="rtl">
       <Grid>
         <MenuCell style={{pointerEvents: 'all'}}>
           <MenuContainer>
@@ -138,10 +138,10 @@ export const Test: FC = () => {
         <SpanOverflowCell>
           <Container>
             <ControlRow>
-              <Label>Reset Keyboard</Label>
+              <Label>اعادة الاختبار</Label>
               <Detail>
                 <AccentButton onClick={testContextObj.clearTestKeys}>
-                  Reset
+                  اعادة
                 </AccentButton>
               </Detail>
             </ControlRow>
@@ -160,7 +160,7 @@ export const Test: FC = () => {
               </ControlRow>
             ) : null}
             <ControlRow>
-              <Label>Key Sounds</Label>
+              <Label>صوت الكيبورد</Label>
               <Detail>
                 <AccentSlider
                   isChecked={testKeyboardSoundsSettings.isEnabled}
@@ -175,7 +175,7 @@ export const Test: FC = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Volume</Label>
+              <Label>مستوى الصوت</Label>
               <Detail>
                 <AccentRange
                   max={100}
@@ -192,7 +192,7 @@ export const Test: FC = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Transpose</Label>
+              <Label>غير السلم الموسيقي</Label>
               <Detail>
                 <AccentRange
                   max={24}
@@ -209,7 +209,7 @@ export const Test: FC = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Waveform</Label>
+              <Label>اختيار الموجة</Label>
               <Detail>
                 <AccentSelect
                   isSearchable={false}
@@ -227,7 +227,7 @@ export const Test: FC = () => {
               </Detail>
             </ControlRow>
             <ControlRow>
-              <Label>Mode</Label>
+              <Label>النمط</Label>
               <Detail>
                 <AccentSelect
                   isSearchable={false}

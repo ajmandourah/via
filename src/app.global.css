@@ -4,6 +4,7 @@ See https://stackoverflow.com/questions/40822458/styled-unicode-arrows-not-showi
  */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans&text=%E2%86%90|%E2%86%92');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 html,
 body {
@@ -17,7 +18,7 @@ body {
   position: relative;
   color: white;
   background-color: #232c39;
-  font-family: 'Fira Sans', Helvetica, Helvetica Neue, Arial, serif;
+  font-family: 'Tajawal', 'Fira Sans', Helvetica, Helvetica Neue, Arial, serif;
   font-weight: 300;
   overflow: hidden;
   margin: 0;
@@ -25,7 +26,7 @@ body {
   user-select: none;
 }
 button {
-  font-family: 'Fira Sans', Helvetica, Helvetica Neue, Arial, serif;
+  font-family: 'Tajawal', 'Fira Sans', Helvetica, Helvetica Neue, Arial, serif;
   font-weight: 300;
 }
 h2 {
